@@ -1,8 +1,7 @@
 <?php
 include_once( 'Faculty.php' );
 require_once( ".htpasswd" );
-
-$version = "1.0.0";
+require_once( 'version.php' );
 
 $ten_minutes_ago = date( 'Y-m-d H:i:s', mktime( date('H'), date('i') - 10 ) );
 $clear_forgot_query = 'delete from  election_forgot_pw '
